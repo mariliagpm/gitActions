@@ -5,3 +5,9 @@
 .classpath
 .project
 .settings
+/.gitignore
+/.travis.yml
+/README.md
+/build.xml
+/pom.xml
+/src/

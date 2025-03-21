@@ -1,55 +1,42 @@
 
 @tag
-Feature: Testing
+Feature: Amazon 
    
-
+    Scenario: Check the menu All
+			Given the user is in the home page 
+			And the user clicks in the all menu link
+			Then the user will see the lateral menu open
+		 
 		   	   
-		   	   
-	 Scenario Outline: Search a movie using a valid name 
-		Given the user is in the home page
-		When the user searches by a valid movie "<movieName>" in the search bar 
-		Then the user will the see a list of movies containing the name typed	
-		When the user click at the first movie of the list 
-		Then the user will be redirect to a page contains more information about the movie "<movieName>"  choosen
-		
-	Examples:
-		    | movieName       	  	  |   
-		    |  Harry Potter           |  
+	  Scenario: Check the menu Today's Deal 
+			Given the user is in the home page 
+			And the user clicks in the todays deal link
+			Then the user will go to today deal url 
+			And the user will see the header of today deals page
+	 
+	  Scenario: Check the menu Customer Service
+			Given the user is in the home page 
+			And the user clicks in the customer service link
+			Then the user will go to customer service url 
+			And the user will see the header of customer service page
 		   	   
 	
-	
-	 Scenario Outline: Search a movie using an invalid name 
-		Given the user is in the home page
-		When the user searches by an invalid movie "<movieName>" in the search bar  
-		Then the user will see a "<message>" in the search bar
+	  Scenario: Check the menu Registry
+			Given the user is in the home page 
+			And the user clicks in the registry link
+			Then the user will go to the registry url 
+			And the user will see the header of registry page
+   
+   Scenario Outline: Check autocomplete seach 
+    Given the user is in the home page  
+    When the user send a product to search using first parameter "<productName>"
+		Then the user will see the product to buy as "<productNameSecond>" and the user will click on it
+		And the user will be redirect to the product chose url
 		
-	Examples:
-		    | movieName       	  	   |   message|  
- 	      |  Harry213                |  	   	    Sorry, we couldn't find any results |
-		   	   
-		   	   
-  Scenario Outline: Login with valid username and pwd 
-		Given the user is in the home page 
-		When the user click at Log in button
-		Then the login modal will be opened 
-		When the user type the right username "<username>" and the right password "<password>"
-		And the user click at sign button 
-		Then user will be redirect to the dashboard page 
-		   
-	 Examples:
-		    | username       	  	                 |  password  |  
-		    |   mariliagpm@hotmail.com             | Tester03  |  
-		   
-		   
-	 Scenario Outline: Login with invalid username and pwd 
-		Given the user is in the home page
-		When the user click at Log in button
-		Then the login modal will be opened 
-		When the user type the right username "<username>" and the right password "<password>"
-		And the user click at sign button  
-		Then the user will see a error message "<message>" displayed in the screen   
-	 Examples:
-		    | username       	  	                 |  password  |  message |
-		    |   mariliagpm3@hotmail.com             | Tester03  |  Sorry, that email or password seems to be incorrect. Please try again or contact us			   |
-		   	   
-		
+	  Examples:
+	    | productName    | productNameSecond |
+	    | school         | supplies   |
+	    | party				   | plates     |
+    
+ 
+			   	   

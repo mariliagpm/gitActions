@@ -1,6 +1,6 @@
-# java-cucumber-example
+# java-cucumber
 
-A sample project for Cucumber and/or Selenium tests.
+A project using java , Cucumber and/or Selenium tests.
 
 Language and tools used
 - Cucumber
@@ -12,7 +12,7 @@ Language and tools used
 ## Prerequisites
 
 - Java instlalled
-- Java home variable configured(https://www.baeldung.com/java-home-on-windows-mac-os-x-linux)	
+- Java home variable configured 
 - Maven installed
 - Maven home variable configured
 
