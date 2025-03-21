@@ -19,7 +19,8 @@ Language and tools used
 
 In order to run browser tests, Selenium will need to be able to drive a browser
 installed to your system.
- 
+
+In the file app.properties ( on the root folder) , you can choose the browser that tests will run( chrome, firefox , ie).
  
 
 ## Use Maven
