@@ -18,7 +18,8 @@ jobs:
 
       with:
 
-        java-version: 1.8
+        java-version: 17
+      
 
     - name: Build with Maven
 
@@ -38,7 +39,7 @@ jobs:
 
       with:
 
-        java-version: 1.8
+        java-version: 17
 
     - name: Test with Maven
 
@@ -58,7 +59,7 @@ jobs:
 
       with:
 
-        java-version: 1.8
+        java-version: 17
 
     - name: Test with Maven
 

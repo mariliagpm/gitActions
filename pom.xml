@@ -6,9 +6,7 @@
 	<artifactId>java-cucumber-example</artifactId>
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
-
-	 
-
+ 
 	<dependencies>
 	 
 	 
@@ -81,7 +79,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
-				<configuration>
+				<configuration> 
 			        <includes>
 			            <include>*</include>
 			        </includes>
